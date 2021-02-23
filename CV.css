@@ -1,0 +1,93 @@
+/*  
+berkshireswash-regular
+*/
+
+@font-face 
+{ /* Définition d'une nouvelle police nommée berkshireswash-regular */
+    font-family: 'berkshireswash-regular';
+    src: url('berkshire-swash/berkshireswash-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1
+{
+     font-family: 'berkshireswash-regular', Arial, serif;
+}
+
+body
+{
+    background-image: url("fond_de_gris.png");
+}
+
+h2
+{
+    color: #DE681F;
+}
+
+h1, h1 + p
+{
+    text-align: center;
+}
+
+img
+{
+    float: right;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+section
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 29%;
+    margin-right: 1%;
+}
+
+#liseret, #contenu
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#liseret
+{   
+    width: 9%;
+    margin-right: 1%;
+    height: 500px;
+    background-image: url('noir.png');
+    border-radius: 10px;
+}
+
+#contenu
+{
+    width: 85%;
+}
+
+ul
+{
+    border: 3px solid yellowgreen;
+    box-shadow: 6px 6px 6px black;
+}
+
+@media all and (max-width: 1024px)
+{
+    #contenu
+    {
+        width: auto;
+    }
+
+
+    #liseret
+    {
+        display: none;
+    }
+
+    section
+    {
+        display: block;
+        width: auto;
+    }
+}
+    
